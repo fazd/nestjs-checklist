@@ -20,8 +20,8 @@ import { TaskStatus } from './enums/task-status.enum';
 import { TasksService } from './services/tasks.service';
 import { Task } from './models/task.entity';
 import { AuthGuard } from '@nestjs/passport';
-import { GetUser } from 'src/auth/decorators/user.decorator';
-import { User } from 'src/auth/models/user.entity';
+import { GetUser } from '../auth/decorators/user.decorator';
+import { User } from '../auth/models/user.entity';
 
 @Controller('tasks')
 @UseGuards(AuthGuard())

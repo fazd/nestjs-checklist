@@ -7,7 +7,6 @@ import { UserRepository } from './models/user.repository';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { config } from 'dotenv/types';
 
 @Module({
   imports: [
